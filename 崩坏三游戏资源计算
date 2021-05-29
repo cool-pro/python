@@ -1,0 +1,17 @@
+import time
+class rockcrystal_reckoning :
+    def data_collection(self) :
+        self.day=int(input('请输入全勤天数:'))
+        self.b = int(input('请输入您深渊单次可获得水晶数:'))
+        self.d = int(input('请输入您每周战场可获得水晶数:'))
+        crystal.reckoning()
+    def reckoning(self):
+        y = int(self.day/7)
+        h = int(self.day/15)
+        c = 0 #活动，版本更新，1，2，3月签到，新主线。
+        rockcrystal = (self.b+2*self.d+25)*y + 100*self.day + 500*h + c
+        print('您全勤%d天,可获得%d水晶'%(self.day,rockcrystal))
+        time.sleep(5)
+        print('感谢你的使用')
+crystal = rockcrystal_reckoning()
+crystal.data_collection()    
